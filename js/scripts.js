@@ -6,14 +6,17 @@ function myNeighbors(nums){
   }
   for (i=0; i <= numsArray.length -1; i++){
     if (numsArray[i].toString().indexOf("3") > -1) {
+      numsArray[i] = "Won't you be my neighbor?"
       console.log("This number contains a 3");
       console.log(numsArray[i].toString());
     }
     else if (numsArray[i].toString().indexOf("2") > - 1) {
+      numsArray[i] = "Boop!"
       console.log("This number contains a 2");
       console.log(numsArray[i].toString());
     }
     else if (numsArray[i].toString().indexOf("1") > - 1) {
+      numsArray[i] = "Beep!"
       console.log("This number contains a 1");
       console.log(numsArray[i].toString());
     }
