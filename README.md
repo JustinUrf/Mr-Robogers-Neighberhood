@@ -32,3 +32,41 @@ MIT
 If you have any questions or comments, feel free to email me at justinurf@gmail.com
 
 Copyright (c) 01/20/23
+
+
+## TDD
+
+Describe : myNeighbors(n)
+
+Test : "It should return any number inputed by user to an array starting from 0."
+Code : myNeighbors(5)
+Expected Ouput: [0,1,2,3,4,5]
+
+Test : "It should read this array and loop through it"
+Code : for (i=0, i <= myNeighbors -1; i++) {
+  console.log(myNeighbors[i])
+}
+Execpected Output:0, 1, 2, 3, 4, 5,
+
+Test : "It should have if statement logics that checks whether or not it contains a 1, 2, or 3,"
+Code : for... {
+  if myNeighbors[i] has a 3{
+    console.log("I have a 3 in me!")
+  }
+  else if myNeighbors[i] has a 2{
+    console.log("I have a 2 in me")
+  }
+  else if ...
+}
+Expected Output : if the index[i] has 3, console log will say "I have a 3 in me!" if the index[i] has 2, the console log will say "I have a 2 in me!" Otherwise it will do nothing
+
+Test : "It should once it checks what number is in the current index, to either take action or do nothing."
+Code for... {
+  if myNeighbors[i] has a 3 {
+    replace index with string that says "Won't you be my neighbor?"
+  }
+  if myNeighbors[i] has a 2 {
+    replace index with string that says "boop"
+  }
+}
+Expected Output : finalArray [0, "beep", "boop", "Won't you be my neighbor," 4, 5, 6, 7, 8, 9, "beep", "boop", "won't you be my neighbor", "beep", "beep"]
