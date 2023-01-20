@@ -4,6 +4,20 @@ function myNeighbors(nums){
   for (i=0; i <= nums; i++){
     numsArray.push(i)
   }
+  for (i=0; i <= numsArray.length -1; i++){
+    if (numsArray[i].toString().indexOf("3") > -1) {
+      console.log("This number contains a 3");
+      console.log(numsArray[i].toString());
+    }
+    else if (numsArray[i].toString().indexOf("2") > - 1) {
+      console.log("This number contains a 2");
+      console.log(numsArray[i].toString());
+    }
+    else if (numsArray[i].toString().indexOf("1") > - 1) {
+      console.log("This number contains a 1");
+      console.log(numsArray[i].toString());
+    }
+  }
   console.log(numsArray)
 }
 
