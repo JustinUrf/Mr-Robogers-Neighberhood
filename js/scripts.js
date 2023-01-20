@@ -16,7 +16,6 @@ function myNeighbors(nums){
     };
   };
   const theNewNeighborhood = numsArray.join(" ");
-  console.log(theNewNeighborhood);
   return theNewNeighborhood;
 }
 
@@ -30,8 +29,15 @@ function handleFormSubmission() {
   event.preventDefault();
   const userNumber = document.getElementById("usernumber-input-id").value;
   const theNeighborhood = myNeighbors(userNumber);
-  document.getElementById("user-house-number").innerText = userNumber;
-  document.getElementById("final-neighborhood").innerText = theNeighborhood;
+  if (Number.isInteger(userNumber)) {
+    document.getElementById("user-house-number").innerText = userNumber;
+    document.getElementById("final-neighborhood").innerText = theNeighborhood;
+  }
+  else {
+    document.getElementById("user-house-number").innerText = "Error";
+    document.getElementById("final-neighborhood").innerText = "Please Enter a valid Number";
+  }
+
 }
 
 // Event Listener
