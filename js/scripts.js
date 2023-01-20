@@ -19,10 +19,13 @@ function myNeighbors(nums){
       numsArray[i] = "Beep!"
       console.log("This number contains a 1");
       console.log(numsArray[i].toString());
-    }
-  }
-  console.log(numsArray)
+    };
+  };
+  const theNewNeighborhood = numsArray.join(" ");
+  console.log(theNewNeighborhood);
+  return theNewNeighborhood;
 }
+
 
 
 
