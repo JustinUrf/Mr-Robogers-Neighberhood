@@ -18,7 +18,7 @@ This website takes user input and creates an array that returns numbers that go 
 
 * Push repository to your personal computer using gitbash or download it to your desktop by downloading repository of github.
 * To open website, use any web browser that supports HTML.
-* Input any number and press "submit house number" to see your neighbors!
+* Input any number and press "submit house number" to see your neighbors! (Don't do more than your computer can handle!)
 * To see any JS or HTML code, use any source-code editor such as VSCode.
 
 ## Known Bugs
