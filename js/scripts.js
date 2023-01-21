@@ -1,6 +1,6 @@
 //Business Logic
-function myNeighbors(nums){
-  let numsArray = []
+function myNeighbors(nums) {
+  let numsArray = [];
   for (i=0; i <= nums; i++) {
     if (i.toString().indexOf("3") > -1) {
       numsArray.push("Won't you be my neighbor?");
@@ -12,12 +12,14 @@ function myNeighbors(nums){
       numsArray.push("Beep!");
     }
     else {
-    numsArray.push(i)
+    numsArray.push(i);
     }
-  }
+  };
   const theNewNeighborhood = numsArray.join(" ");
   return theNewNeighborhood;
 };
+
+
 
 //UI logic
 function handleFormSubmission() {
@@ -33,11 +35,11 @@ function handleFormSubmission() {
     document.getElementById("user-house-number").innerText = "Error";
     document.getElementById("final-neighborhood").innerText = "Please Enter a valid Number";
     document.querySelector("div#user-feedback").setAttribute("class", "error");
-  }
+  };
+};
 
-}
 
 // Event Listener
-window.addEventListener("load", function(){
+window.addEventListener("load", function() {
   this.document.querySelector("form#robogers-neighborhood").addEventListener("submit", handleFormSubmission);
 });
